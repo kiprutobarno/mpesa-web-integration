@@ -2,7 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import "dotenv/config";
-import auth from "../routes/token";
+import paymentRoute from "../routes/paymentRoute";
 
 const app = express();
 
@@ -22,4 +22,4 @@ app.get("/", (req, res) => {
   res.send("MPESA programming in progress, time to get PAID!");
 });
 
-app.use(auth);
+app.use(paymentRoute);
