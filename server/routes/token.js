@@ -1,8 +1,8 @@
 import { Router } from "express";
-import generateToken from "../controller/token";
+import { generateToken, stkPush } from "../controller/token";
 
 const auth = Router();
 
-auth.get("/auth", generateToken);
+auth.post("/auth", generateToken, stkPush);
 
 export default auth;
