@@ -1,19 +1,15 @@
 import { useState } from "react";
-import axios from "axios";
 import styles from "./App.module.css";
+import { useMakePaymentMutation } from "./features/api/apiSlice";
 const App = () => {
   const [phone, setPhone] = useState();
   const [amount, setAmount] = useState();
+  const [makePayment] = useMakePaymentMutation();
 
   const payHandler = async (event) => {
     event.preventDefault();
-
     try {
-      const { data } = await axios.post("http://localhost:8000/payment", {
-        phone,
-        amount,
-      });
-      console.log(data);
+      makePayment({ phone, amount });
     } catch (error) {
       console.log(error);
     }
