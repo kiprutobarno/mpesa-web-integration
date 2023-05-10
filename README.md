@@ -21,4 +21,4 @@ This application demonstrates MPESA STK Push functionality that allows a Busines
 }
 ```
 #### Screenshots
-![Form](./client/images/forms.png "Input Form")
+[![form.png](https://i.postimg.cc/PqYc5vpm/form.png)](https://postimg.cc/VSs476F6)
