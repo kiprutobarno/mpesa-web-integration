@@ -1,5 +1,5 @@
 # Lipa Na Mpesa Integration
-This application demonstrates MPESA STK Push functionality that allows a Business to send an STK Push to a cutomer's Safaricom MPESA line. The Customer would then just need to input his MPESA PIN to authroize the trabsaction 
+This application demonstrates MPESA STK Push functionality that allows a Business to send an STK Push to a cutomer's Safaricom MPESA line to fullfill a payment request. The customer would then just need to input his/her MPESA PIN to authorize and complete the payment transaction 
 #### Technologies
 1. React
 2. Redux
